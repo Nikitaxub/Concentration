@@ -10,13 +10,13 @@ import Foundation
 
 struct Card: Hashable
 {
-//    static func == (lhs: Card, rhs: Card) -> Bool {
-//        return lhs.idenntifier == rhs.idenntifier
-//    }
-//
-//    func hash(into hasher: inout Hasher) {
-//        hasher.combine(idenntifier)
-//    }
+    static func == (lhs: Card, rhs: Card) -> Bool {
+        return lhs.idenntifier == rhs.idenntifier
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(idenntifier)
+    }
     
     var isFaceUp = false
     var isMatched = false
